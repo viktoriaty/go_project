@@ -1,0 +1,19 @@
+
+
+.equipment__title{
+  margin:0 auto 40px;
+  width: 800px;
+  
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.equipment__list{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
