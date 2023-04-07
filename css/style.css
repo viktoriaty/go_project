@@ -6,6 +6,8 @@
 @import url("about.css");
 @import url("footer.css");
 @import url("review.css");
+@import url("equipment.css");
+@import url("gameover.css");
 
 html {
   position: relative;
@@ -22,6 +24,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+
   background-color: #1b1a1b;
   color: #FFFFFF;
 }
@@ -35,16 +38,6 @@ img, svg {
 button {
   padding: 0;
   cursor: pointer;
-}
-
-section {
-  padding-top: 100px;
-  
-}
-
-footer {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 a {
@@ -74,6 +67,6 @@ fieldset {
 
 .container {
   max-width: 1240px;
-  padding: 0 30px;
+  padding: 50px 30px;
   margin: 0 auto;
 }

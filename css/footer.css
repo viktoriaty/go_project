@@ -37,5 +37,24 @@
 
 .social__item {
   display: inline-block;
-  margin-right: 26px;;
+  margin-right: 26px;
+}
+
+.footer__container {
+  margin-bottom: 156px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.designer {
+  text-align: right;
 }

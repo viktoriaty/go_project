@@ -1,26 +1,27 @@
 .header {
-  height: 863px;
+  padding-top: 30px;
 }
 
-.header:before {
-  content: url(../images/head.png);
-  position: absolute;
-  top: 210px;
-  right: 165px;
-}
-
-.header__title {
-  margin-top: 146px;
-  margin-bottom: 0;
+.header__container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
-  font-weight: 900;
-  font-size: 150px;
-  width: 883px;
-  letter-spacing: -0.1em;
+  font-size: 22px;
 }
 
-.header__subtitle {
-  margin-left: 100px;
-  font-size: 28px;
+.navigation__list {
+  display:flex;
+  gap: 40px;
   font-weight: 400;
+  line-height: 50px;
+}
+
+.header__link {
+  padding: 12px 32px 13px;
+  font-weight: 700;
+  line-height: 30px;
+  border: 3px solid #CD06FF;
+  border-radius: 10px;
 }

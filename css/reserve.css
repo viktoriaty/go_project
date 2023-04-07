@@ -1,7 +1,163 @@
+.container-reserve {
+  width: 1440px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #440F51;
+  ;
+}
+
+
 .reserve__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
+  line-height: 50px;
+}
+
+fieldset {
+  border: none;
+}
+
+.reserve-hall {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.reserve__subtitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.reserve-hall__label {
+  width: 250px;
+  height: 55px;
+  padding-top: 7px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.reserve-hall__input {
+  display: none;
+}
+
+.reserve-service {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reserve-game {
+  margin-bottom: 67px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+
+.reserve-game__subtitle {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.date {
+  width: 134px;
+  height: 52px;
+  flex-basis: 1;
+  
+}
+
+.time {
+  width: 134px;
+  height: 52px;
+  flex-basis: 1;
+}
+.amount {
+  width: 300px;
+  height: 52px;
+  flex-basis: 2;
+}
+
+.reserve-data {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
+
+.reserve-data__name {
+  margin-top: 6px;
+  width: 280px;
+  height: 52px;
+}
+
+
+.reserve-data__contacts{
+  margin-top: 6px;
+  width: 300px;
+  height: 52px;
+}
+
+
+.reserve-data__container-1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  width: 300px;
+  gap: 36px 32px;
+}
+
+.reserve-data__container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 36px;
+}
+
+.reserve-data__container-3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 36px;
+}
+
+.reserve-data__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reserve__button {
+  margin-right: 230px;
+  align-items: flex-end;
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #FFFFFF;
 }
