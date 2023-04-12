@@ -1,9 +1,9 @@
 .container-reserve {
-  width: 1440px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+ 
+  padding: 80px 30px;
+  margin: 0 auto;
   background-color: #440F51;
-  ;
+ 
 }
 
 
@@ -51,6 +51,21 @@ fieldset {
   background-color: #FFFFFF;
 }
 
+.reserve-hall__label:hover {
+  border: 3px solid #640AA3;
+  background-color: #EADEED;
+}
+
+.reserve-hall__label:focus {
+  border: 3px solid #640AA3;
+  background-color: #FFFFFF;
+}
+
+.reserve-hall__label:active {
+  border: 3px solid #FFFFFF;
+  background-color: #6C0287;
+}
+
 .reserve-hall__input {
   display: none;
 }
@@ -70,6 +85,9 @@ fieldset {
   line-height: 25px;
 }
 
+.reserve-game__input:focus {
+  outline: 1px solid #CD06FF;
+}
 
 .reserve-game__subtitle {
   margin-bottom: 24px;
@@ -95,6 +113,12 @@ fieldset {
   flex-basis: 2;
 }
 
+.date:focus, .time:focus, .amount:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
+  
+}
+
 .reserve-data {
   margin-bottom: 40px;
   display: flex;
@@ -107,6 +131,12 @@ fieldset {
   margin-top: 6px;
   width: 280px;
   height: 52px;
+  
+}
+
+.reserve-data__name:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
 }
 
 
@@ -116,6 +146,11 @@ fieldset {
   height: 52px;
 }
 
+.reserve-data__contacts:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
+  
+}
 
 .reserve-data__container-1 {
   display: flex;
@@ -151,6 +186,7 @@ fieldset {
 }
 
 .reserve__button {
+  
   margin-right: 230px;
   align-items: flex-end;
   padding: 16px 50px;
@@ -158,6 +194,25 @@ fieldset {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  outline:none;
   border-radius: 10px;
   background-color: #FFFFFF;
+  border: 3px solid transparent;
+}
+
+.reserve__button:hover {
+  border-color: #6C0287;
+  background-color: #EADEED;
+}
+
+.reserve__button:focus {
+  
+  border-color: #6C0287;
+  background-color: #FFFFFF;
+  
+}
+
+.reserve__button:active {
+  border: none;
+  background-color: #EADEED;
 }

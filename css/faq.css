@@ -28,9 +28,28 @@
   float: right;
 }
 
+.faq__item:nth-child(even):hover:after {
+  content: url("../images/open_hover.svg");
+  
+}
+
+.faq__item:nth-child(even):active:after {
+  content: url("../images/open_active.svg");
+  
+}
+
 .faq__item:nth-child(odd):after {
   content: url("../images/open-purple.svg");
   width: 46px;
   height: 46px;
   float: right;
+}
+
+.faq__item:nth-child(odd):hover:after {
+  content: url("../images/open-purple_hover.svg");
+}
+
+.faq__item:nth-child(odd):active:after {
+  content: url("../images/open-purple_active.svg");
+  
 }

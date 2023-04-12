@@ -35,10 +35,38 @@
   background-repeat: no-repeat;
 }
 
-.social__item {
-  display: inline-block;
-  margin-right: 26px;
+.social {
+  display:flex;
+  justify-content: space-between;
+  width: 280px;
+  /*transition-property: color outline-color;
+  transition-duration: 0.3s 0.2s;*/
 }
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+.social__link {
+  display: block;
+  outline: 1px solid transparent;
+  color: #FFFFFF;
+}
+.social__link:hover {
+  
+  color:#EADEED;
+}
+
+.social__link:focus {
+  outline-color: #CD06FF;
+  
+}
+
+.social__link:active {
+  outline-color: transparent;
+  color:#CD06FF;
+}
+
 
 .footer__container {
   margin-bottom: 156px;

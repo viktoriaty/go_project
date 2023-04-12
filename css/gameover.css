@@ -72,12 +72,26 @@
 
 .reserved__link {
   padding: 25px 69px;
+  outline: none;
   border-radius: 10px;
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: #CD06FF;
+  background-color: #6C0287;
+}
+
+.reserved__link:hover {
+  
+  background-color: #840AA3;
+}
+
+.reserved__link:focus {
+  background-color: #840AA3;
+}
+
+.reserved__link:active {
+  background-color: #640AA3;
 }
 
 .container-down {
@@ -86,7 +100,45 @@
   
 }
 
-.game-over__down {
+.down__link {
   justify-content: center;
   z-index: 1;
+  width: 97px;
+  height: 97px;
+  outline: 1px solid transparent;
 }
+
+
+.down__link:hover circle {
+  fill: #FFFFFF;
+}
+
+.down__link:hover rect {
+  fill: #6C0287;
+}
+
+.down__link:focus {
+  outline-color: #CD06FF;
+}
+
+.down__link:focus circle {
+  fill: transparent;
+}
+
+.down__link:focus rect {
+  fill: #FFFFFF;
+}
+
+.down__link:active circle {
+  fill: #CD06FF;
+  stroke: #CD06FF;
+}
+
+.down__link:active rect {
+  fill: #FFFFFF;
+}
+
+/*.game-over__down:active rect {
+  fill: #FFFFFF;
+}*/
+
