@@ -25,6 +25,7 @@
 
 .halls__link {
   display: inline-block;
+  outline: none;
   width: 580px;
   height: 349px;
   padding-top: 135px;
@@ -32,6 +33,18 @@
   text-align: center;
   font-size: 70px;
   font-weight: 700;
+}
+
+.halls__link:hover {
+  color: #6C0287;
+}
+
+.halls__link:focus {
+  color: #6C0287;
+}
+
+.halls__link:active {
+  color: #640AA3;
 }
 
 .halls__link_vibes {

@@ -18,6 +18,22 @@
   line-height: 50px;
 }
 
+.navigation__link {
+  outline: none;
+}
+
+.navigation__link:hover {
+  color: #6C0287;
+}
+
+.navigation__link:focus {
+  color: #6C0287;
+}
+
+.navigation__link:active {
+  color: #640AA3;
+}
+
 .header__link {
   padding: 12px 32px 13px;
   font-weight: 700;

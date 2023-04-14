@@ -23,6 +23,7 @@
 
 .faq__item:nth-child(even):after {
   content: url("../images/open.svg");
+  cursor: pointer;
   width: 46px;
   height: 46px;
   float: right;
@@ -40,6 +41,7 @@
 
 .faq__item:nth-child(odd):after {
   content: url("../images/open-purple.svg");
+  cursor: pointer;
   width: 46px;
   height: 46px;
   float: right;
