@@ -13,6 +13,18 @@
   line-height: 28px;
 }
 
+.contacts__link:hover {
+  color: #6C0287;
+}
+
+.contacts__link:focus {
+  color: #6C0287;
+  }
+  
+.contacts__link:active{
+    color: #6C0287;
+  } 
+
 .contacts__address {
   padding-left: 65px;
   margin-bottom: 38px;
