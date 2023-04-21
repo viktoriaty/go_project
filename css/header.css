@@ -20,6 +20,8 @@
 
 .navigation__link {
   outline: none;
+  transition-duration: 0.2s;
+  transition-property: color;
 }
 
 .navigation__link:hover {
@@ -42,6 +44,8 @@
   border: 3px solid #CD06FF;
   border-radius: 10px;
   box-shadow: none;
+  transition-duration: 0.2s;
+  transition-property: background-color, border;
 }
 
 .header__link:hover {

@@ -1,9 +1,7 @@
 .container-reserve {
- 
   padding: 80px 30px;
   margin: 0 auto;
   background-color: #440F51;
- 
 }
 
 
@@ -49,6 +47,8 @@ fieldset {
   line-height: 40px;
   color: #000000;
   background-color: #FFFFFF;
+  transition-duration: 0.2s;
+  transition-property: background-color, border;
 }
 
 .reserve-hall__label:hover {
@@ -83,6 +83,8 @@ fieldset {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
+  transition-duration: 0.2s;
+  transition-property: outline;
 }
 
 .reserve-game__input:focus {
@@ -95,61 +97,20 @@ fieldset {
   font-size: 24px;
   line-height: 28px;
 }
-.date {
-  width: 134px;
-  height: 52px;
-  flex-basis: 1;
-  
-}
 
-.time {
-  width: 134px;
-  height: 52px;
-  flex-basis: 1;
-}
-.amount {
-  width: 300px;
-  height: 52px;
-  flex-basis: 2;
-}
-
-.date:focus, .time:focus, .amount:focus {
-  border: none;
-  outline: 2px solid #CD06FF;
-  
-}
 
 .reserve-data {
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   gap: 50px;
-  
+ 
 }
 
-.reserve-data__name {
-  margin-top: 6px;
-  width: 280px;
-  height: 52px;
-  
-}
-
-.reserve-data__name:focus {
-  border: none;
-  outline: 2px solid #CD06FF;
-}
-
-
-.reserve-data__contacts{
-  margin-top: 6px;
-  width: 300px;
-  height: 52px;
-}
-
-.reserve-data__contacts:focus {
-  border: none;
-  outline: 2px solid #CD06FF;
-  
+.reserve-data__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .reserve-data__container-1 {
@@ -158,6 +119,37 @@ fieldset {
   align-items: flex-end;
   width: 300px;
   gap: 36px 32px;
+  
+}
+
+.date {
+  width: 134px;
+  height: 52px;
+  flex-basis: 1;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
+  
+}
+
+.time {
+  width: 134px;
+  height: 52px;
+  flex-basis: 1;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
+}
+.amount {
+  width: 300px;
+  height: 52px;
+  flex-basis: 2;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
+}
+
+.date:focus, .time:focus, .amount:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
+  
 }
 
 .reserve-data__container-2 {
@@ -167,6 +159,19 @@ fieldset {
   gap: 36px;
 }
 
+.reserve-data__name {
+  margin-top: 6px;
+  width: 280px;
+  height: 52px;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
+}
+
+.reserve-data__name:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
+}
+
 .reserve-data__container-3 {
   display: flex;
   flex-direction: column;
@@ -174,11 +179,22 @@ fieldset {
   gap: 36px;
 }
 
-.reserve-data__label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+.reserve-data__contacts{
+  margin-top: 6px;
+  width: 300px;
+  height: 52px;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
 }
+
+.reserve-data__contacts:focus {
+  border: none;
+  outline: 2px solid #CD06FF;
+  
+}
+
+
+
 
 .container-button {
   display: flex;
@@ -198,6 +214,9 @@ fieldset {
   border-radius: 10px;
   background-color: #FFFFFF;
   border: 3px solid transparent;
+  transition-duration: 0.2s;
+  transition-property: border-color,background-color;
+
 }
 
 .reserve__button:hover {

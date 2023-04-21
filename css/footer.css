@@ -11,6 +11,11 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  
+}
+
+.contacts__link {
+  transition: color, 0.2s;
 }
 
 .contacts__link:hover {
@@ -51,8 +56,7 @@
   display:flex;
   justify-content: space-between;
   width: 280px;
-  /*transition-property: color outline-color;
-  transition-duration: 0.3s 0.2s;*/
+  
 }
 
 svg {
@@ -63,15 +67,16 @@ svg {
   display: block;
   outline: 1px solid transparent;
   color: #FFFFFF;
+  transition-property: color, outline-color;
+  transition-duration: 0.2s;
 }
+
 .social__link:hover {
-  
   color:#EADEED;
 }
 
 .social__link:focus {
   outline-color: #CD06FF;
-  
 }
 
 .social__link:active {
@@ -79,12 +84,10 @@ svg {
   color:#CD06FF;
 }
 
-
 .footer__container {
   margin-bottom: 156px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .copyright {

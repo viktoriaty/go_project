@@ -8,7 +8,6 @@
   position: absolute;
   top: 310px;
   right: 165px;
-  
 }
 
 .game-over__title {
@@ -79,6 +78,8 @@
   line-height: 30px;
   text-transform: uppercase;
   background-color: #6C0287;
+  transition-duration: 0.2s;
+  transition-property: background-color;
 }
 
 .reserved__link:hover {
@@ -101,44 +102,25 @@
 }
 
 .down__link {
-  justify-content: center;
+  background-image: url(../images/down.svg);
   z-index: 1;
   width: 97px;
   height: 97px;
-  outline: 1px solid transparent;
+  transition: background-image 0,5s;
+  
 }
 
-
-.down__link:hover circle {
-  fill: #FFFFFF;
-}
-
-.down__link:hover rect {
-  fill: #6C0287;
+.down__link:hover {
+  background-image: url(../images/down_hover.svg);
 }
 
 .down__link:focus {
-  outline-color: #CD06FF;
+  background-image: url(../images/down.svg);
+  outline: 1px solid #CD06FF;
+  
 }
 
-.down__link:focus circle {
-  fill: transparent;
+.down__link:active {
+  background-image: url(../images/down_active.svg);
+  outline: 1px solid transparent;
 }
-
-.down__link:focus rect {
-  fill: #FFFFFF;
-}
-
-.down__link:active circle {
-  fill: #CD06FF;
-  stroke: #CD06FF;
-}
-
-.down__link:active rect {
-  fill: #FFFFFF;
-}
-
-/*.game-over__down:active rect {
-  fill: #FFFFFF;
-}*/
-

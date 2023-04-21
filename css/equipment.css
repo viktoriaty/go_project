@@ -17,3 +17,11 @@
   gap: 40px 20px;
 }
 
+.equipment__item {
+  transition-duration: 0.2s;
+  
+}
+.equipment__item:hover {
+  transform: scale(1.1);
+}
+
