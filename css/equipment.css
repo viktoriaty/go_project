@@ -3,7 +3,6 @@
 .equipment__title{
   margin:0 auto 40px;
   width: 800px;
-  
   text-align: center;
   text-transform: uppercase;
   line-height: 50px;
@@ -19,9 +18,26 @@
 
 .equipment__item {
   transition-duration: 0.2s;
-  
-}
+} 
 .equipment__item:hover {
   transform: scale(1.1);
+}
+
+.equipment__item:nth-child(3n+2) {
+  transform: translateY(70px);
+}
+
+.equipment__item:nth-child(3n+2):hover {
+  transform: scale(1.1);
+}
+
+.equipment__text {
+  width: 310px;
+  position: absolute;
+  padding-left: 40px;
+  padding-top: 166px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
 }
 

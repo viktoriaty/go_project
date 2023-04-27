@@ -40,7 +40,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--text-color-three);
 }
 
 .game-over__item2 {
@@ -50,7 +50,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--text-color-three);
 }
 
 .game-over__item3 {
@@ -77,22 +77,22 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: #6C0287;
+  background-color: var(--bg-color-four);
   transition-duration: 0.2s;
   transition-property: background-color;
 }
 
 .reserved__link:hover {
   
-  background-color: #840AA3;
+  background-color: var(--bg-color-five);
 }
 
 .reserved__link:focus {
-  background-color: #840AA3;
+  background-color: var(--bg-color-five);
 }
 
 .reserved__link:active {
-  background-color: #640AA3;
+  background-color: var(--bg-color-six);
 }
 
 .container-down {
@@ -106,7 +106,7 @@
   z-index: 1;
   width: 97px;
   height: 97px;
-  transition: background-image 0,5s;
+  transition: background-image 0.5s;
   
 }
 

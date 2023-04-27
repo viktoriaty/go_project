@@ -1,7 +1,7 @@
 .container-reserve {
   padding: 80px 30px;
   margin: 0 auto;
-  background-color: #440F51;
+  background-color: var(--bg-color-two);
 }
 
 
@@ -45,25 +45,25 @@ fieldset {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: var(--text-color-two);
+  background-color: var(--bg-color-three);
   transition-duration: 0.2s;
   transition-property: background-color, border;
 }
 
 .reserve-hall__label:hover {
-  border: 3px solid #640AA3;
-  background-color: #EADEED;
+  border: 3px solid var(--border-color-two);
+  background-color: var(--bg-color-seven);
 }
 
 .reserve-hall__label:focus {
-  border: 3px solid #640AA3;
-  background-color: #FFFFFF;
+  border: 3px solid var(--border-color-two);
+  background-color: var(--bg-color-three);
 }
 
 .reserve-hall__label:active {
-  border: 3px solid #FFFFFF;
-  background-color: #6C0287;
+  border: 3px solid var(--border-color-one);
+  background-color: var(--bg-color-five);
 }
 
 .reserve-hall__input {
@@ -88,7 +88,7 @@ fieldset {
 }
 
 .reserve-game__input:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--border-color-three);
 }
 
 .reserve-game__subtitle {
@@ -148,7 +148,7 @@ fieldset {
 
 .date:focus, .time:focus, .amount:focus {
   border: none;
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--border-color-three);
   
 }
 
@@ -169,7 +169,7 @@ fieldset {
 
 .reserve-data__name:focus {
   border: none;
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--border-color-three);
 }
 
 .reserve-data__container-3 {
@@ -189,7 +189,7 @@ fieldset {
 
 .reserve-data__contacts:focus {
   border: none;
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--border-color-three);
   
 }
 
@@ -212,7 +212,7 @@ fieldset {
   text-transform: uppercase;
   outline:none;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: var(--bg-color-three);
   border: 3px solid transparent;
   transition-duration: 0.2s;
   transition-property: border-color,background-color;
@@ -220,18 +220,18 @@ fieldset {
 }
 
 .reserve__button:hover {
-  border-color: #6C0287;
-  background-color: #EADEED;
+  border-color: var(--border-color-four);
+  background-color: var(--bg-color-seven);
 }
 
 .reserve__button:focus {
   
-  border-color: #6C0287;
-  background-color: #FFFFFF;
+  border-color: var(--border-color-four);
+  background-color: var(--bg-color-three);
   
 }
 
 .reserve__button:active {
   border: none;
-  background-color: #EADEED;
+  background-color: var(--bg-color-seven);
 }

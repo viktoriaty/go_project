@@ -38,15 +38,15 @@
 }
 
 .halls__link:hover {
-  color: #6C0287;
+  color: var(--text-color-four);
 }
 
 .halls__link:focus {
-  color: #6C0287;
+  color: var(--text-color-four);
 }
 
 .halls__link:active {
-  color: #640AA3;
+  color: var(--text-color-five);
 }
 
 .halls__link_vibes {

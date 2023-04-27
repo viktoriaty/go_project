@@ -1,0 +1,23 @@
+:root {
+  --text-color-one: #FFFFFF;
+  --text-color-two: #1C1A1A;
+  --text-color-three: #CD06FF;
+  --text-color-four: #6C0287;
+  --text-color-five: #640AA3;
+  --text-color-six: #EADEED;
+
+  --bg-color-one: #1b1a1b;
+  --bg-color-two: #440F51;
+  --bg-color-three: #FFFFFF;
+  --bg-color-four: #6C0287;
+  --bg-color-five: #840AA3;
+  --bg-color-six: #640AA3;
+  --bg-color-seven: #EADEED;
+
+  --border-color-one: #FFFFFF;
+  --border-color-two: #640AA3;
+  --border-color-three: #CD06FF;
+  --border-color-four: #6C0287;
+  --border-color-five: #000000;
+}
+
