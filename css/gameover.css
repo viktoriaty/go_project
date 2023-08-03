@@ -1,13 +1,10 @@
 .game-over {
-  height: 923px;
-  z-index: 0;
+  max-height: 923px;
 }
 
-.game-over:before {
-  content: url(../images/head.png);
-  position: absolute;
-  top: 310px;
-  right: 165px;
+.head {
+  display: flex;
+  justify-content: space-between;
 }
 
 .game-over__title {
@@ -24,6 +21,7 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 400;
+  line-height: 50px;
 }
 
 .game-over__list {
@@ -96,18 +94,28 @@
 }
 
 .container-down {
-  display: flex;
-  justify-content: center;
-  
+  display: grid;
+  margin-top: -165px;
+}
+.head__foto {
+  max-width: 675px;
+  max-height: 762px;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 
 .down__link {
+  margin-left: 34px;
+  margin-bottom: 90px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: end;
   background-image: url(../images/down.svg);
-  z-index: 1;
+  z-index: 2;
   width: 97px;
   height: 97px;
   transition: background-image 0.5s;
-  
+  transition-duration: 1s;
 }
 
 .down__link:hover {
@@ -123,4 +131,207 @@
 .down__link:active {
   background-image: url(../images/down_active.svg);
   outline: 1px solid transparent;
+}
+
+@media (max-width:1250px) {
+  .game-over__title {
+    margin-bottom: 20px;
+    font-size: 120px;
+    line-height: 100%;
+    letter-spacing: -12px;
+  }
+
+  .game-over__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  
+  .game-over__list {
+    margin-bottom: 80px;
+    gap: 0 40px;
+    width: 348px;
+  }
+  
+  .game-over__item1 {
+    width: 168px;
+    font-size: 80px;
+    line-height: 113px;
+  }
+  
+  .game-over__item2 {
+    width: 140px;
+    font-size: 60px;
+    line-height: 85px;
+    
+  }
+  
+  .game-over__item3 {
+    width: 168px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .game-over__item4 {
+    width: 140px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .reserved__link {
+    padding: 17px 48px;
+    margin-left: 39px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .container-down {
+    margin-top: -130px;
+  }
+
+  .down__link {
+    margin-left: 0;
+    margin-bottom: 46px;
+    background-size: 67px 67px;
+    width: 67px;
+    height: 67px;
+  }
+
+  .head__foto {
+    max-width: 453px;
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .game-over__title {
+    font-size: 86px;
+    letter-spacing: -8.6px;
+  }
+
+  .game-over__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .game-over__list {
+    margin-bottom: 100px;
+    gap: 0 32px;
+    width: 221px;
+  }
+  
+  .game-over__item1 {
+    width: 103px;
+    font-size: 50px;
+    line-height: 71px;
+   }
+  
+  .game-over__item2 {
+    
+    width: 86px;
+    font-size: 40px;
+    line-height: 56px;
+    
+  }
+  
+  .game-over__item3 {
+    width: 103px;
+    font-size: 16px;
+    line-height: 18px;
+   
+  }
+  
+  .game-over__item4 {
+    width: 86px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .reserved__link {
+    padding: 11px 35px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .container-down {
+    margin-top: -100px;
+  }
+
+  .head__foto {
+    max-width: 409px;
+    max-height: 479px;
+  }
+
+  .down__link {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .game-over__title {
+    margin-bottom: 6px;
+    font-size: 35px;
+    
+    letter-spacing: -2.8px;
+  }
+
+  .game-over__subtitle {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  
+  .game-over__list {
+    margin-bottom: 30px;
+    gap: 0 20px;
+    width: 139px;
+  }
+  
+  .game-over__item1 {
+    width: 65px;
+    font-size: 26px;
+    line-height: 37px;
+   
+  }
+  
+  .game-over__item2 {
+    
+    width: 54px;
+    font-size: 22px;
+    line-height: 31px;
+    
+  }
+  
+  .game-over__item3 {
+    width: 65px;
+    font-size: 10px;
+    line-height: 11px;
+   
+  }
+  
+  .game-over__item4 {
+    width: 54px;
+    font-size: 10px;
+    line-height: 11px;
+   
+  }
+  
+  .reserved__link {
+    padding: 8px 13px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .container-down {
+    margin-top: -40px;
+  }
+
+  .head__foto {
+    max-width: 161px;
+    max-height: 179px;
+  }
+
 }

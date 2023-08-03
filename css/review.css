@@ -1,19 +1,21 @@
-.reviews__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-   
-}
+
 
 .reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 100px;
   font-size: 20px;
   font-weight: 400 ;
+  line-height: 28px;
 }
 
-.reviews__item:not(:last-child) {
-  margin-bottom: 50px;
+.reviews__item {
+  display: flex;
+  gap: 20px;
 }
+
+
 
 .reviews__foto {
   border: none;
@@ -30,7 +32,8 @@
 }
 
 .reviews__content {
-  float: left;
+  /*float: left;*/
+  margin-bottom: 0;
 }
 
 .foto-container:before {
@@ -43,8 +46,6 @@
   background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
 }
 
-
-
 .reviews__text {
   display: inline-block;
   padding-top: 52px;
@@ -52,7 +53,137 @@
   max-width: 680px;
 }
 
-.reviews__item {
-  height: 331px;
+@media (max-width: 1250px) {
+
+  .reviews__title {
+    margin-bottom: 26px;
+  }
+  
+  
+  .reviews__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .reviews__item {
+    gap: 38px;
+  }
+  
+  .reviews__foto {
+    width: 172px;
+    height: 172px;
+    margin-bottom: 21px;
+    margin-right: 0x;
+    
+  }
+  
+  
+  .review__subtitle {
+    max-width: 172px;
+    
+  }
+  
+  
+  .foto-container:before {
+    width: 172px;
+    height: 172px;
+   
+  }
+  
+  .reviews__text {
+    display: inline-block;
+    padding-top: 52px;
+    margin-bottom: 1px;
+    max-width: 515px;
+  }
 }
 
+@media (max-width: 950px) {
+
+  .reviews__title {
+    margin-bottom: 31px;
+  }
+  
+  .reviews__list {
+   
+    gap: 15px;
+    padding-left: 63px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .reviews__item {
+    gap: 15px;
+  }
+  
+
+  .reviews__foto {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 17px;
+  }
+  
+  
+  .review__subtitle {
+    max-width: 156px;
+  }
+  
+  
+  .foto-container:before {
+    width: 153px;
+    height:153px;
+  }
+  
+  .reviews__text {
+    
+    max-width: 393px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .reviews__title {
+    margin-bottom: 31px;
+  }
+  
+  
+  .reviews__list {
+    padding-left: 0;
+    gap: 20px;
+    
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .reviews__item {
+    flex-flow: column;
+  }
+  
+  .reviews__content {
+    margin: 0 auto;
+  }
+  
+  .reviews__foto {
+    width: 86px;
+    height: 86px;
+    margin-bottom:9px;
+  }
+  
+  
+  .review__subtitle {
+    max-width: 156px;
+    
+  }
+  
+  
+  .foto-container:before {
+    width: 86px;
+    height:86px;
+  }
+  
+  .reviews__text {
+    max-width: 280px;
+  }
+}

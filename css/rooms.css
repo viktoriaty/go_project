@@ -1,0 +1,127 @@
+.rooms {
+  padding-bottom: 32px;
+}
+
+.rooms__list {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  column-gap: 20px;
+}
+
+.rooms__item-1 {
+  grid-column: 1/2;
+}
+
+.rooms__item-2 {
+  grid-column: 2/3;
+}
+
+.rooms__item-3 {
+  grid-column: 3/4;
+}
+
+.rooms__link  {
+  display: grid;
+  width: 380px;
+  height: 229px;
+  background-size: 380px 229px;
+}
+
+.rooms__link_vibes {
+  background-image: url(../images/80_vibes.jpg); 
+}
+
+.rooms__link_wildwest {
+  background-image: url(../images/wild_west.jpg); 
+}
+
+.rooms__link_starwars {
+  background-image: url(../images/star_wars.jpg);
+}
+
+.rooms__link_neonstyle {
+  background-image: url(../images/neon_style.jpg);
+  
+}
+
+.rooms__link_text {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+  height: 72px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+@media (max-width: 1250px) {
+  .rooms {
+    padding-bottom: 12px;
+  }
+
+  .rooms__list {
+    grid-template-columns: repeat(3, 288px);
+  }
+
+  .rooms__link  {
+    width: 288px;
+    height: 172px;
+    background-size: 288px 172px;
+  }
+}
+
+@media (max-width:950px) {
+  .rooms {
+    padding-bottom: 0;
+  }
+
+  .rooms__list {
+    grid-template-columns: repeat(3, 224px);
+    column-gap: 8px;
+  }
+
+  .rooms__link  {
+    width: 224px;
+    height: 134px;
+    background-size: 224px 134px;
+  }
+
+  .rooms__link_text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:720px) {
+
+
+  .rooms__list {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(3, 140px);
+    row-gap: 5px;
+  }
+
+  .rooms__item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .rooms__item-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .rooms__item-3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+
+  .rooms__link  {
+    width: 280px;
+    height: 140px;
+    background-size: 280px 140px;
+  }
+
+}

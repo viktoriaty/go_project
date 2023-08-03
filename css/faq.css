@@ -1,21 +1,23 @@
 .faq__title {
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .faq__item {
-  padding: 30px 70px;
-  margin-bottom: 20px;
-  line-height: 46px;
+  padding: 21px 70px 20px;
+  line-height: 28px;
   font-weight: 700;
   font-size: 24px;
   background-color: var(--bg-color-three);
   color: var(--text-color-two);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faq__item:nth-child(even) {
@@ -28,6 +30,7 @@
   background-image: url(../images/open.svg);
   width: 46px;
   height: 46px;
+  display: inline-block;
   cursor: pointer;
   transition: background-image, 0.2s;
 }
@@ -50,6 +53,7 @@
   background-image: url(../images/open-purple.svg);
   width: 46px;
   height: 46px;
+  display: block;
   cursor: pointer;
   transition: background-image, 0.2s;
 }
@@ -60,4 +64,75 @@
 
 .faq__plus_purple:active {
   background-image: url(../images/open-purple_active.svg);
+}
+
+@media (max-width: 1250px) {
+  .faq__list {
+  gap: 16px;
+  }
+  
+  .faq__item {
+    padding: 12px 25px;
+    line-height: 24px;
+  }
+
+  .faq__item:nth-child(even) {
+    background-color: var(--bg-color-three);
+    color: var(--text-color-two);
+  }
+
+  .faq__plus_white {
+    background-image: url(../images/open-purple.svg);
+ 
+  }
+  
+  .faq__plus_white:hover {
+    background-image: url(../images/open-purple_hover.svg);
+  
+  }
+  
+  .faq__plus_white:active {
+    background-image: url(../images/open-purple_active.svg);
+    
+  }
+  
+}
+
+@media (max-width: 950px) {
+
+  .faq__item {
+    padding: 12px 54px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+}
+
+@media (max-width: 720px) {
+  
+  .faq__list{
+    gap: 10px;
+  }
+
+  .faq__item {
+    padding: 7px 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .faq__text {
+    width: 224px;
+  }
+  
+.faq__plus_white {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.faq__plus_purple {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+
+}
 }

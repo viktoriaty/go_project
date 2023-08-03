@@ -1,40 +1,38 @@
-.halls__title {
-  margin-bottom: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
+.halls{
+  padding-bottom: 50px;
 }
 
 .halls__list {
-  font-size: 0;
+  display: grid;
+  grid-template-columns: 580px 580px;
+  grid-template-rows: 349px 349px;
+  gap: 20px;
+  
 }
 
 .halls__item {
   display: inline-block;
 }
 
-.halls__item:nth-child(odd) {
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.halls__item:last-child {
-  margin-bottom: 0;
-}
-
 .halls__link {
-  display: inline-block;
-  outline: none;
-  width: 580px;
+  display: grid;
+  background-size: 580px 349px;
   height: 349px;
-  padding-top: 135px;
-  line-height: 80px;
-  text-align: center;
-  font-size: 70px;
-  font-weight: 700;
   transition-duration: 0.2s;
   transition-property: color;
+  
+}
+
+.halls__link_text {
+  display: inline-block;
+  width: 252px;
+  line-height: 80px;
+  align-self: center;
+  justify-self: center;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .halls__link:hover {
@@ -51,10 +49,13 @@
 
 .halls__link_vibes {
   background-image: url(../images/80_vibes.jpg);
+  
+  
 }
 
 .halls__link_starwars {
   background-image: url(../images/star_wars.jpg);
+  
 }
 
 .halls__link_wilwest {
@@ -63,4 +64,119 @@
 
 .halls__link_neon {
   background-image: url(../images/neon_style.jpg);
+}
+
+@media (max-width: 1250px) {
+  .halls__list {
+    display: grid;
+    grid-template-columns: 443px 443px;
+    grid-template-rows: 267px 267px;
+    
+    
+  }
+
+  .halls__link {
+    width: 443px;
+    height: 267px;
+  }
+
+  .halls__link_vibes {
+    background-size: 443px 267px;
+  }
+
+  .halls__link_starwars {
+    background-size: 443px 267px;
+  }
+  
+  .halls__link_wilwest {
+    background-size: 443px 267px;
+  }
+  
+  .halls__link_neon {
+    background-size: 443px 267px;
+  }
+
+  .halls__link_text {
+    line-height: 60px;
+    font-size: 50px;
+    
+    
+  }
+}
+
+@media (max-width: 950px) {
+  .halls__list {
+    display: grid;
+    grid-template-columns: 335px 335px;
+    grid-template-rows: 200px 200px;
+
+  }
+
+  .halls__link {
+    width: 335px;
+    height: 200px;
+  }
+
+  .halls__link_vibes {
+    background-size: 335px 200px;
+  }
+
+  .halls__link_starwars {
+    background-size: 335px 200px;
+  }
+  
+  .halls__link_wilwest {
+    background-size: 335px 200px;
+  }
+  
+  .halls__link_neon {
+    background-size: 335px 200px;
+  }
+
+  .halls__link_text {
+    width: 110px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .halls{
+    padding-bottom: 15px;
+  }
+
+  .halls__list {
+    
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(4, 168px);
+    gap: 10px;
+    
+  }
+
+  .halls__link {
+    width: 280px;
+    height: 168px;
+  }
+
+  .halls__link_vibes {
+    background-size: 280px 168px;
+  }
+
+  .halls__link_starwars {
+    background-size: 280px 168px;
+  }
+  
+  .halls__link_wilwest {
+    background-size: 280px 168px;
+  }
+  
+  .halls__link_neon {
+    background-size: 280px 168px;
+  }
+
+  .halls__link_text {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
