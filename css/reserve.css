@@ -349,8 +349,8 @@
    }
 
   .reserve-data {
+    margin: 0 auto 50px;
     
-    margin-bottom: 50px;
     grid-template-columns: 280px 300px;
     grid-template-rows: 52px 190px;
     row-gap: 64px;
@@ -424,8 +424,73 @@
 
 }
 
+@media (max-width:680px) {
+  .reserve-hall {
+    display: grid;
+    grid-template-columns: minmax(130px, 150px) minmax(130px, 150px);
+    grid-template-rows: repeat(2, 38px);
+    gap: 14px 50px;
+  }
 
-@media (max-width: 720px) {
+  
+  .reserve-data {
+    margin-left: 25%;
+    margin-bottom: 35px;
+    grid-template-columns: 300px;
+    grid-template-rows: 119px 141px 141px;
+    row-gap: 45px;
+  }
+
+  .reserve-data__container-1 {
+    margin-top: 10px;
+    
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(2, 52px);
+    
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 15px;
+  }
+
+  .data__container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .amount {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 300px;
+  }
+
+  .reserve-data__container-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 300px;
+   
+  }
+  
+  .reserve-data__name {
+    margin-top: 6px;
+    width:300px;
+
+  }
+  
+  .reserve-data__container-3 {
+    
+    grid-row: 3/4;
+    grid-column: 1/2;
+    max-width: 300px;
+  }
+
+  .container-button {
+  
+    
+    justify-content:center;
+  }
+}
+
+@media (max-width: 420px) {
 
   .reserve {
     padding-top: 15px;
@@ -478,6 +543,7 @@
   
 
   .reserve-data {
+    margin-left: 0;
     margin-bottom: 35px;
     grid-template-columns: 280px;
     grid-template-rows: 119px 141px 141px;
@@ -538,4 +604,4 @@
     line-height: 24px;
 
   }
-}
+} 

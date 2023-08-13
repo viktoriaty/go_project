@@ -108,7 +108,7 @@
   
 }
 
-@media (max-width: 720px) {
+@media (max-width: 420px) {
   
   .faq__list{
     gap: 10px;

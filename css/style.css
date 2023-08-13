@@ -113,8 +113,8 @@ fieldset {
 
 @media (max-width: 950px) {
   .container {
-    max-width: 768px;
-    padding: 35px 40px;
+   
+    padding: 35px 30px;
     
   }
 
@@ -126,9 +126,11 @@ fieldset {
   }
 }
 
+@media
+/*
 @media (max-width: 720px) {
   .container {
-    max-width: 320px;
+    max-width: 720px;
     padding: 15px 20px;
     
   }
@@ -143,4 +145,4 @@ fieldset {
 
 @media (max-width: 320px) {
    
-}
+}*/

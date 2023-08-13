@@ -143,7 +143,13 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width:748px) {
+  .reviews__item {
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 420px) {
 
   .reviews__title {
     margin-bottom: 31px;

@@ -96,7 +96,7 @@
 
 @media (max-width: 950px) {
   .header__container {
-    max-width: 748px;
+   
   }
 
   .header__navigation {
@@ -108,10 +108,10 @@
   }
 }
 
-@media (max-width:720px) {
+@media (max-width:470px) {
 
   .header__container {
-    max-width: 300px;
+    
     padding: 20px 20px 5px;
   }
 
