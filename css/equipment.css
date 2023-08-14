@@ -169,19 +169,20 @@
 
   .equipment__list{
     margin-bottom: 70px;
-    grid-template-rows: repeat(3, 135px);
-    grid-template-columns: repeat(2, 259px);
+    grid-template-rows: repeat(3, 120px);
+    grid-template-columns: repeat(2, 239px);
     
-    gap: 20px;
+    gap: 10px;
   }
 
   .equipment__item {
     align-self: start;
-    grid-template-rows: 135px;
-    grid-template-columns: 259px;
+    grid-template-rows: 120px;
+    grid-template-columns: 239px;
   
   } 
 }
+
 
 @media (max-width: 420px) {
 

@@ -425,6 +425,10 @@
 }
 
 @media (max-width:680px) {
+  .reserve-data__container {
+    max-width: 320px;
+  }
+
   .reserve-hall {
     display: grid;
     grid-template-columns: minmax(130px, 150px) minmax(130px, 150px);
@@ -434,7 +438,7 @@
 
   
   .reserve-data {
-    margin-left: 25%;
+    
     margin-bottom: 35px;
     grid-template-columns: 300px;
     grid-template-rows: 119px 141px 141px;

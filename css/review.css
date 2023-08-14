@@ -144,7 +144,22 @@
 }
 
 @media (max-width:748px) {
+  .reviews__content {
+    text-align: center;
+  }
+
+  .review__subtitle {
+    text-align: center;
+    max-width: 393px;
+  }
+
+  .reviews__text {
+    
+    max-width: 500px;
+  }
+
   .reviews__item {
+    align-self: center;
     flex-flow: column;
   }
 }
