@@ -83,17 +83,14 @@
 
   .faq__plus_white {
     background-image: url(../images/open-purple.svg);
- 
   }
   
   .faq__plus_white:hover {
     background-image: url(../images/open-purple_hover.svg);
-  
   }
   
   .faq__plus_white:active {
     background-image: url(../images/open-purple_active.svg);
-    
   }
   
 }
@@ -133,6 +130,5 @@
 .faq__plus_purple {
   background-size: 30px 30px;
   background-repeat: no-repeat;
-
 }
 }

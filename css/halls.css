@@ -31,12 +31,9 @@
 
 .halls__link {
   display: grid;
- 
   background-size: 580px 349px;
-
   transition-duration: 0.2s;
   transition-property: color;
-  
 }
 
 .halls__link_text {
@@ -65,12 +62,14 @@
 
 .halls__link_vibes {
   background-image: url(../images/80_vibes.jpg);
+  background-repeat: no-repeat;
   width: 580px;
   height: 349px; 
 }
 
 .halls__link_starwars {
   background-image: url(../images/star_wars.jpg);
+  background-repeat: no-repeat;
   width: 580px;
   height: 349px;
   object-fit: cover;
@@ -79,6 +78,7 @@
 
 .halls__link_wilwest {
   background-image: url(../images/wild_west.jpg);
+  background-repeat: no-repeat;
   width: 580px;
   height: 349px;
   object-fit: cover;
@@ -86,6 +86,7 @@
 
 .halls__link_neon {
   background-image: url(../images/neon_style.jpg);
+  background-repeat: no-repeat;
   width: 580px;
   height: 349px;
   object-fit: cover;
@@ -97,8 +98,6 @@
     display: grid;
     grid-template-columns: 443px 443px;
     grid-template-rows: 267px 267px;
-    
-    
   }
 
   .halls__link {
@@ -125,14 +124,14 @@
   .halls__link_text {
     line-height: 60px;
     font-size: 50px;
-
   }
 
 }
 
 @media (max-width: 950px) {
   .halls__list {
-    
+    max-width: 760px;
+    margin: 0 auto;
     grid-template-columns: minmax(230px, 355px) minmax(230px, 355px);
     grid-template-rows: minmax(115px, 220px) minmax(115px, 220px) ;
     gap: 50px;
@@ -143,26 +142,13 @@
     max-height: 220px;
   }
 
-
-@media (max-width: 768px) {
-  .halls__list {
-    
-    grid-template-columns: minmax(230px, 335px) minmax(230px, 335px);
-    grid-template-rows: minmax(115px, 200px) minmax(115px, 200px) ;
-    gap: 20px;
-  }
-
-  .halls__link {
-    max-width: 335px;
-    max-height: 200px;
-  }
-
 }
 
 @media (max-width:740px) {
   .halls__list {
     max-width: 530px;
     margin: 0 auto;
+    display: grid;
     grid-template-columns: 530px;
     grid-template-rows: repeat(4, 299px);
     row-gap: 10px;
@@ -220,25 +206,8 @@
     grid-row: 4/5;
   }
 
+
 }
-
-@media (max-width: 550px) {
-
-
-  .halls__list {
-    max-width: 430px;
-    grid-template-columns: 430px;
-    grid-template-rows: repeat(4, 209px);
-    row-gap: 10px;
-    
-  }
-
-  .halls__link_text {
-    font-size: 26px;
-    line-height: 34px;
-  }
-}
-
 
 @media (max-width: 420px) {
   

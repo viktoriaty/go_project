@@ -54,7 +54,6 @@
 .header__link:hover {
   background-color: var(--bg-color-four);
   border: 3px solid var(--border-color-four);
-
 }
 
 .header__link:focus {
@@ -65,7 +64,6 @@
 .header__link:active {
   background-color: var(--bg-color-six);
   border: 3px solid var(--border-color-five);
-  
 }
 
 @media (max-width:1250px) {
@@ -95,9 +93,6 @@
 }
 
 @media (max-width: 950px) {
-  .header__container {
-   
-  }
 
   .header__navigation {
     display: none;
@@ -111,7 +106,6 @@
 @media (max-width:470px) {
 
   .header__container {
-    
     padding: 20px 20px 5px;
   }
 

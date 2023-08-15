@@ -1,11 +1,9 @@
 
 .about__container {
- 
   display: grid;
   grid-template-columns: minmax(535px, 600px) minmax(444px, 500px);
   grid-template-rows: minmax(195px, 222px) minmax(206px, 314px);
   gap: 59px 80px;
-
 }
 
 .about__foto {
@@ -17,11 +15,9 @@
   display: flex;
   flex-direction: column;
   gap: 28px;
-  
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-   
 }
 
 .quote {
@@ -35,7 +31,6 @@
 .quote__text {
   display: inline-block;
   max-width: 400px;
- 
 }
 
 .quote__first {
@@ -75,7 +70,6 @@
   }
 
   .about__container {
-    
     grid-template-columns: minmax(381px, 420px) minmax(278px, 444px);
     grid-template-rows: 195px 206px;
     gap: 37px 39px;
@@ -83,7 +77,6 @@
 
   .about__title {
     margin-bottom: 26px;
-  
   }
 
   .about__foto {
@@ -97,18 +90,12 @@
   
   
   .about__text {
-   
-    
     gap: 24px;
-    
     font-size: 18px;
-    
     line-height: 24px;
-     
   }
   
   .quote {
-    
     font-size: 30px;
     margin-bottom: 19px;
     line-height: 36px;
@@ -118,13 +105,11 @@
     width: 70px;
     height: 70px;
   }
-
   
   .signature__name {
     width: 225px;
     font-size: 18px;
     line-height: 26px;
-    
   }
 }
 
@@ -132,18 +117,15 @@
   .about {
     padding-top: 30px;
   }
+
   .about__container {
-    
     grid-template-columns:381px 278px;
     grid-template-rows: 378px 173px;
     gap: 28px 41px;
-   /* display: flex;
-    
-    gap: 80px;*/
   }
+
   .about__title {
     margin-bottom: 30px;
-  
   }
 
   .about__foto {
@@ -154,22 +136,17 @@
   }
   
   .text__block {
-   
     gap: 19px;
   }
-  
   
   .about__text {
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
-    
     gap: 24px;
     padding-bottom: 16px;
     font-size: 18px;
-    
     line-height: 24px;
-     
   }
   
   .quote__container {
@@ -178,9 +155,7 @@
   }
 
   .quote {
-    
     font-size: 30px; 
-    
     line-height: 36px;
   }
 
@@ -195,18 +170,15 @@
   }
   
   .signature__foto {
-
     width: 70px;
     height: 70px;
 
   }
- 
-  
+   
   .signature__name {
     width: 225px;
     font-size: 18px;
     line-height: 26px;
-    
   }
 }
 
@@ -217,7 +189,6 @@
     grid-template-columns:minmax(280px, 500px);
     grid-template-rows: 247px 500px 250px;
     gap: 16px;
-
   }
 
   .about__foto {
@@ -226,18 +197,13 @@
     object-fit: cover;
     grid-row: 2/3;
     grid-column: 1/2;
-    
   }
 
   .about__text {
     grid-column: 1/2;
     grid-row: 1/2;
-   
-    
     gap: 16px;
     padding-bottom: 16px;
-    
-     
   }
   
   .quote__container {
@@ -247,12 +213,11 @@
 
 }
 
-
-
 @media (max-width: 450px) {
   .about {
     padding-top: 30px;
   }
+
   .about__container {
     padding-left: 0;
     grid-template-columns:280px;
@@ -262,7 +227,6 @@
   }
   .about__title {
     margin-bottom: 30px;
-  
   }
 
   .about__foto {
@@ -273,22 +237,16 @@
   }
   
   .text__block {
-   
-    gap: 19px;
+      gap: 19px;
   }
-  
   
   .about__text {
     grid-column: 1/2;
     grid-row: 1/2;
-   
-    
     gap: 16px;
     padding-bottom: 16px;
     font-size: 12px;
-    
     line-height: 16px;
-     
   }
   
   .quote__container {
@@ -297,9 +255,7 @@
   }
 
   .quote {
-    
     font-size: 18px; 
-    
     line-height: 26px;
   }
 
@@ -310,17 +266,13 @@
 
   
   .signature__foto {
-
     width: 56px;
     height: 56px;
-
   }
- 
   
   .signature__name {
     width: 170px;
     font-size: 12px;
     line-height: 16px;
-    
   }
 }
