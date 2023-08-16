@@ -151,10 +151,10 @@
 
 @media (max-width:740px) {
   .halls__list {
-    max-width: 530px;
+    max-width: 430px;
     margin: 0 auto;
-    grid-template-columns: 530px;
-    grid-template-rows: repeat(4, 299px);
+    grid-template-columns: 430px;
+    grid-template-rows: repeat(4, 199px);
     row-gap: 10px;
   }
 
@@ -179,9 +179,9 @@
   }
 
   .halls__link {
-    background-size: 530px 299px;
-    max-width: 530px;
-    max-height: 299px;
+    background-size: 430px 299px;
+    max-width: 430px;
+    max-height: 199px;
     
   }
 
@@ -218,7 +218,7 @@
     margin: 0 auto;
     grid-template-columns: 280px;
     grid-template-rows: repeat(4, 168px);
-    row-gap: 10px;
+    row-gap: 10px; 
   }
 
   .halls__link {

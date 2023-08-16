@@ -219,6 +219,8 @@
   }
 
   .about__container {
+    max-width: 280px;
+    margin: 0 auto;
     padding-left: 0;
     grid-template-columns:280px;
     grid-template-rows: 127px 280px 140px;
