@@ -148,20 +148,20 @@
           <fieldset class="reserve-hall">
             <legend class="reserve__subtitle">Выбери зал</legend>
             <label class="reserve-hall__label">
-              <input class="reserve-hall__input" type="radio" name="halls" value="80's vibes">
-              80's vibes
+              <input class="reserve-hall__input" type="checkbox" name="halls" value="80's vibes">
+              <span class="reserve-hall__text">80's vibes</span>
             </label>
             <label class="reserve-hall__label">
-              <input class="reserve-hall__input" type="radio" name="halls" value="star wars">
-              star wars
+              <input class="reserve-hall__input" type="checkbox" name="halls" value="star wars">
+              <span class="reserve-hall__text">star wars</span>
             </label>
             <label class="reserve-hall__label">
-              <input class="reserve-hall__input" type="radio" name="halls" value="wild west">
-              wild west
+              <input class="reserve-hall__input" type="checkbox" name="halls" value="wild west">
+              <span class="reserve-hall__text">wild west</span>
             </label >
             <label class="reserve-hall__label" >
-              <input class="reserve-hall__input" type="radio" name="halls" value="neon style">
-              neon style
+              <input class="reserve-hall__input" type="checkbox" name="halls" value="neon style">
+              <span class="reserve-hall__text">neon style</span>
             </label>
           </fieldset>
 
@@ -231,7 +231,7 @@
                 <input class="date" placeholder="Дата" type="data" name="date" required>
                 <input class="time" placeholder="Время" type="time" name="time" required>
               </div>
-              <input class="amount" type="number" name="count" placeholder="Сколько человек" required>
+              <input class="amount" type="number" min="0" step="1" name="count" placeholder="Сколько человек" required>
             </div>
             <div class="reserve-data__container-2">
               <label class="reserve-data__label">

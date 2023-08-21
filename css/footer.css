@@ -76,7 +76,7 @@ svg {
 
 .social__link:active {
   outline-color: transparent;
-  color:var(--text-color-six);
+  color:var(--text-color-three);
 }
 
 .copyright {

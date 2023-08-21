@@ -17,14 +17,14 @@
   line-height: 28px;
 }
 
-.reserve-hall__label {
+.reserve-hall__text {
+  display: inline-block;
   width: 250px;
   height: 55px;
   padding-top: 7px;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
-  
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -35,17 +35,22 @@
   transition-property: background-color, border;
 }
 
-.reserve-hall__label:hover {
+.reserve-hall__input:checked + .reserve-hall__text {
+  border: 3px solid var(--border-color-one);
+  background-color: var(--bg-color-five);
+}
+
+.reserve-hall__text:hover {
   border: 3px solid var(--border-color-two);
   background-color: var(--bg-color-seven);
 }
 
-.reserve-hall__label:focus {
+.reserve-hall__text:focus {
   border: 3px solid var(--border-color-two);
   background-color: var(--bg-color-three);
 }
 
-.reserve-hall__label:active {
+.reserve-hall__text:active {
   border: 3px solid var(--border-color-one);
   background-color: var(--bg-color-five);
 }
@@ -244,7 +249,7 @@
     line-height: 28px;
   }
 
-  .reserve-hall__label {
+  .reserve-hall__text {
     width: 180px;
     height: 44px;
     padding-top: 10px;
@@ -298,7 +303,7 @@
     margin-bottom: 30px;
   }
   
-  .reserve-hall__label {
+  .reserve-hall__text {
     width: 150px;
     height: 38px;
     padding-top: 9px;
@@ -443,7 +448,7 @@
     gap: 14px 20px;
   }
 
-  .reserve-hall__label {
+  .reserve-hall__text {
     width: 130px;
     height: 30px;
     padding-top: 6px;
